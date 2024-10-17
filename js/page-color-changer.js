@@ -14,3 +14,8 @@ const updateBackgroundColor = () => {
   // Set the background color of body
   body.style.backgroundColor = `rgb(${redValue},${greenValue},${blueValue})`
 }
+
+//Add three event listener when user change the slider, invoke the function above
+redSlider.addEventListener('input', updateBackgroundColor)
+greenSlider.addEventListener('input', updateBackgroundColor)
+blueSlider.addEventListener('input', updateBackgroundColor)
